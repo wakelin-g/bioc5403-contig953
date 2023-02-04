@@ -1,0 +1,10 @@
+100.00	1	0	R	1	root
+100.00	1	0	R1	131567	  cellular organisms
+100.00	1	0	D	2	    Bacteria
+100.00	1	0	P	1224	      Proteobacteria
+100.00	1	0	C	28211	        Alphaproteobacteria
+100.00	1	0	O	204441	          Rhodospirillales
+100.00	1	0	F	41295	            Rhodospirillaceae
+100.00	1	0	G	168934	              Thalassospira
+100.00	1	0	S	220697	                Thalassospira xiamenensis
+100.00	1	1	S1	1123366	                  Thalassospira xiamenensis M-5 = DSM 17429
