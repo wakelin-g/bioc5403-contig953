@@ -1,0 +1,15 @@
+import os
+import sys
+import glob
+
+GENOME_FILES = glob.glob('data/*/*.fna')
+GENOME_NAMES = [d.split("/")[1] for d in GENOME_FILES]
+PK_OUTS = ['gff','gbk','fna','faa','ffn','sqn','fsa','tbl','err','log','txt']
+
+rule prokka_annotate:
+    input:
+        [genome for genome in GENOME_FILES]
+    output:
+        expand("prokka_outs/{genome}/{genome}.{ext}", genome=GENOME_NAMES, ext=PK_OUTS)
+    shell:
+        "prokka {input}"
